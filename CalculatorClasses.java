@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-public class CalculatorClasses extends CalculatorGUI implements ActionListener, KeyListener {
+public class Calculator extends CalculatorGUI implements ActionListener, KeyListener {
 
 	String stringNum1, stringOps, stringNum2;
 
@@ -16,7 +16,7 @@ public class CalculatorClasses extends CalculatorGUI implements ActionListener, 
 	boolean noNumber = true;
 	boolean iWantToRestart = true;
 
-	CalculatorClasses() {
+	Calculator() {
 		stringNum1 = stringOps = stringNum2 = "";
 		initUI();
 	}
