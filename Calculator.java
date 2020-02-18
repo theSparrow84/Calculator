@@ -202,7 +202,8 @@ public class Calculator extends CalculatorGUI implements ActionListener, KeyList
 
 				stringNum2 = stringNum2 + command;
 			}
-		}
+		}		
+		iWantToRestart = false; // to check
 	}
 
 	// add the number, or +, or -, to the active number
@@ -216,6 +217,7 @@ public class Calculator extends CalculatorGUI implements ActionListener, KeyList
 		} else {
 			stringNum2 = stringNum2 + command;
 		}
+		iWantToRestart = false;
 
 		noNumber = false;
 	}
